@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+
+.header{
+  color: #f0ebeb;
+    font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --transition: all 300ms ease-in-out;
+  --dark-color: #332e29;
+  --light-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body{
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.vh-100{
+  min-height: 100vh;
+}
+
+/* have to headerbanner url here */
+#header{
+  background: linear-gradient(rgba(15, 14, 14, 0.5), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/nz1ZFTR/header-banner.jpg') center/cover no-repeat fixed;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.change-my-color{
+  fill: black;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+}
+
+#header .container{
+  width: 100%;
+}
+.header-content{
+  padding-bottom: 4rem;
+}
+.header-content h1{
+  font-size: 4.5rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+.header-content h2{
+  color: var(--light-color);
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.social-links{
+  display: flex;
+  margin-top: 1rem;
+}
+
+.social-links li a{
+  width: 40px;
+  height: 40px;
+  background-color: var(--light-color);
+  margin-right: 1rem;
+  border-radius: .3rem;
+  box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+.social-links li a:hover{
+  opacity: 0.9;
+}
+
+.linkInsta{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* .icon{
+	width: 60px;
+	height: 60px;
+	border-radius: 15px;
+	text-align: center;
+	background-image: linear-gradient(155deg, #4C57A2 8%, #87439A 50%, #e02870 85%);
+	position: relative;
+	overflow: hidden;
+	
+	i{
+		color: #fff;
+    	font-size: 50px;
+		line-height: 60px;
+		position: relative;
+		z-index: 1;
+	}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon.after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30%;
+    left: -60%;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(rgba(246, 221, 132,1) 15%, 
+    rgba(255, 45, 45, 0.65) 50%, 
+    rgba(0, 0, 0, 0) 70%);
+  } */
+
+  /* About */
+
+
+
+.GalleryContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
+
+
+
+
+
+
+
+
